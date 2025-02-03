@@ -13,7 +13,7 @@
         android:theme="@style/Theme.GustavioAndroidStudio"
         tools:targetApi="31">
         <activity
-            android:name=".paginaPrincipal"
+            android:name=".paginaUsuario"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

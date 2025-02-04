@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_blue"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:contentDescription="Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etUsuarioRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Usuario"
+        android:drawableStart="@drawable/ic_user"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/etEmailRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/etContrasenaRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Contraseña"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/btnRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Regístrate"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/tvIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Ya tienes cuenta? Inicia sesión"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

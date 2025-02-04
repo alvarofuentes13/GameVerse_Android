@@ -17,7 +17,7 @@ public class PaginaPrincipal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pagina_principal);
 
         // Inicializa los datos
         popularGames = new ArrayList<>();

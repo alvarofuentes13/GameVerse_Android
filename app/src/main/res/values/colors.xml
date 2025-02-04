@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="background">#0E0E2A</color>
-    <color name="Secundario">#4CA6E7</color>
-    <color name="Terciario">#2343E0</color>
-    <color name="Gris">#BABABA</color>
-
+    <color name="dark_blue">#0A0E21</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#B0B0B0</color>
+    <color name="light_blue">#1E90FF</color>
+    <color name="blue">#007BFF</color>
+    <color name="button_pressed">#FF4081</color>
+    <color name="button_normal">#6200EE</color>
 </resources>

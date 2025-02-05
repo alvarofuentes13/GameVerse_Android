@@ -22,15 +22,15 @@ public class LoginActivity extends AppCompatActivity {
             String usuario = etUsuario.getText().toString().trim();
             String contrasena = etContrasena.getText().toString().trim();
 
-            if (usuario.isEmpty() || contrasena.isEmpty()) {
-                Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show();
-            } else if (usuario.equals("admin") && contrasena.equals("1234")) {
+            // Si el usuario es "admin" y la contraseña es "1234", lo lleva a PaginaPrincipal
+            if (usuario.equals("admin") && contrasena.equals("1234")) {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, MainActivity.class));
-                finish();
             } else {
-                Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+
+                startActivity(new Intent(this, PaginaPrincipal.class));
             }
+            finish(); // Cierra la actividad actual
         });
 
         btnCrearCuenta.setOnClickListener(v -> startActivity(new Intent(this, RegisterActivity.class)));

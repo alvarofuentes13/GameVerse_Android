@@ -7,4 +7,5 @@
     <color name="blue">#007BFF</color>
     <color name="button_pressed">#FF4081</color>
     <color name="button_normal">#6200EE</color>
+    <color name="menus">#1A1C46</color>
 </resources>

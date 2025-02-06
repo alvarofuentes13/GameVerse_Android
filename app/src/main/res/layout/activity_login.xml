@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/dark_blue"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:contentDescription="Logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Usuario"
+        android:drawableStart="@drawable/ic_user"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint=" Contraseña"
+        android:drawableStart="@drawable/ic_password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Has olvidado la contraseña?"
+        android:textSize="14sp"
+        android:textColor="@color/light_blue"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Iniciar sesión"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Crear una nueva cuenta"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/light_blue"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

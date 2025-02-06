@@ -1,149 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0B0E2E"
-    tools:context=".MainActivity">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/dark_blue">
 
-    <!-- Icono del menú -->
-    <ImageView
-        android:id="@+id/menuIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_menu"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="#FFFFFF" />
-
-    <!-- Icono del perfil -->
-    <ImageView
-        android:id="@+id/profileIcon"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:tint="#FFFFFF" />
-
-    <!-- Texto de bienvenida -->
     <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Hola, Gustavo!"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/menuIcon"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Subtexto -->
-    <TextView
-        android:id="@+id/subText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Opina sobre los videojuegos que ya has jugado"
-        android:textColor="#D3D3D3"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcomeText"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Sección de videojuegos populares -->
-    <TextView
-        android:id="@+id/popularGamesTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Videojuegos populares de este mes"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subText"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/popularGamesRecycler"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/popularGamesTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="8dp"
-        android:clipToPadding="false" />
-
-    <!-- Sección de listas populares -->
-    <TextView
-        android:id="@+id/popularListsTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Listas populares este mes"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/popularGamesRecycler"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/popularListsRecycler"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/popularListsTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="8dp"
-        android:clipToPadding="false" />
-
-    <!-- Sección de reviews -->
-    <TextView
-        android:id="@+id/reviewsTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Reviews de amigos"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/popularListsRecycler"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/reviewsRecycler"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reviewsTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:padding="8dp"
-        android:clipToPadding="false" />
-
-    <!-- Barra de navegación inferior -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#1A1C46"
-        app:menu="@menu/bottom_nav_menu"
-        app:labelVisibilityMode="labeled"
-        app:itemIconTint="@color/white"
-        app:itemTextColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Bienvenido"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</LinearLayout>

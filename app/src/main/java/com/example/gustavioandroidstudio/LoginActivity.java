@@ -27,7 +27,6 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, MainActivity.class));
             } else {
-
                 startActivity(new Intent(this, PaginaPrincipal.class));
             }
             finish(); // Cierra la actividad actual

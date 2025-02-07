@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@color/dark_blue"
+    android:background="@color/background"
     android:padding="20dp">
 
     <ImageView
@@ -57,7 +57,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Regístrate"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/accent_blue"
         android:textColor="@color/white"
         android:layout_marginTop="15dp" />
 

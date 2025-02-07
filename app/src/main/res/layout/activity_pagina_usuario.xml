@@ -1,175 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0A0A32"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="10dp"
     android:id="@+id/usuarioMain">
 
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/baseline_insert_emoticon_24"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gustavo"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 SEGUIDORES  |  420 Seguidos"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="4dp" />
+
+    <!-- Estadísticas -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
-
-        <!-- Perfil -->
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/baseline_insert_emoticon_24" />
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingTop="8dp"
-            android:text="Gustavo"
+            android:text="455\nJugados"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingTop="4dp"
-            android:text="500 SEGUIDORES  |  420 Seguidos"
-            android:textColor="#AAAAAA"
-            android:textSize="14sp" />
-
-        <!-- Estadísticas -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:paddingTop="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="455\nJugados"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="33\nJugado este año"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="4\nListas"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:text="30\nReseñas"
-                android:textAlignment="center"
-                android:textColor="@android:color/white"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <!-- Sección de favoritos -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:text="Videojuegos favoritos de Gustavo"
+            android:text="33\nJugado este año"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="8dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="7dp">
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-            </LinearLayout>
-        </HorizontalScrollView>
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="8dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:text="Videojuegos recientes"
+            android:text="4\nListas"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="8dp" />
 
-        <HorizontalScrollView
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="7dp">
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-
-                <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="100dp"
-                    android:padding="4dp"
-                    />
-            </LinearLayout>
-        </HorizontalScrollView>
+            android:text="30\nReseñas"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:padding="8dp" />
     </LinearLayout>
-</ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Videojuegos favoritos de Gustavo"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingTop="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewGames"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:scrollbars="horizontal" />
+</LinearLayout>

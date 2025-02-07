@@ -65,7 +65,7 @@ public class PaginaPrincipal extends AppCompatActivity {
                     Toast.makeText(PaginaPrincipal.this, "Buscar seleccionado", Toast.LENGTH_SHORT).show();
                     return true;
                 } else if (itemId == R.id.nav_profile) {
-                    Intent intent = new Intent(PaginaPrincipal.this, paginaUsuario.class);
+                    Intent intent = new Intent(PaginaPrincipal.this, PaginaUsuario.class);
                     //finish();
                     startActivity(intent);
                     return true;
@@ -91,7 +91,7 @@ public class PaginaPrincipal extends AppCompatActivity {
     }
 
     public void goToUserPage(View view) {
-        Intent intent = new Intent(this, paginaUsuario.class);
+        Intent intent = new Intent(this, PaginaUsuario.class);
         //finish();
         startActivity(intent);
     }

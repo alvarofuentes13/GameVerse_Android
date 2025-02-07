@@ -1,1 +1,1 @@
-![ReadMe_GameVerse](https://github.com/user-attachments/assets/d20ceb13-83ff-4305-b397-faedbb421b61)
+![Captura de pantalla 2025-02-06 192504](https://github.com/user-attachments/assets/56bc608e-857a-423b-a60d-b8e8a9ec0ae2)

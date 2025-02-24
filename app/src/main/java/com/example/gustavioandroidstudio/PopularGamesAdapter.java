@@ -8,12 +8,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PopularGamesAdapter extends RecyclerView.Adapter<PopularGamesAdapter.ViewHolder> {
 
     private final Context context;
-    private final List<Game> games;
+    private List<Game> games;
     private final OnGameClickListener onGameClickListener;
 
     public PopularGamesAdapter(Context context, List<Game> games, OnGameClickListener listener) {
@@ -57,5 +58,16 @@ public class PopularGamesAdapter extends RecyclerView.Adapter<PopularGamesAdapte
     public interface OnGameClickListener {
         void onGameClick(Game game);
     }
-}
 
+    public void filtrar(String texto) {
+        List<Game> juegosFiltrados = new ArrayList<>();
+        for (Game game : games) {
+            if (game.getTitle().toLowerCase().contains(texto.toLowerCase())) {
+                juegosFiltrados.add(game);
+            }
+        }
+        this.games.clear();
+        this.games.addAll(juegosFiltrados);
+        notifyDataSetChanged();
+    }
+}

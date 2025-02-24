@@ -1,18 +1,28 @@
 package com.example.gustavioandroidstudio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import android.view.MenuItem;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class PaginaUsuario extends AppCompatActivity {
 
     private RecyclerView popularGamesRecycler;
     private PopularGamesAdapter popularGamesAdapter;
     private List<Game> popularGames;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,5 +44,32 @@ public class PaginaUsuario extends AppCompatActivity {
             Toast.makeText(this, "Peor que el overcooked", Toast.LENGTH_SHORT).show();
         });
         popularGamesRecycler.setAdapter(popularGamesAdapter);
+
+// Inicializa el BottomNavigationView
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int itemId = item.getItemId();
+                if (itemId == R.id.nav_home) {
+                    Intent intent = new Intent(PaginaUsuario.this, PaginaPrincipal.class);
+                    finish();
+                    startActivity(intent);
+                    return true;
+                } else if (itemId == R.id.nav_search) {
+                    Intent intent = new Intent(PaginaUsuario.this, BuscarJuegosActivity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (itemId == R.id.nav_profile) {
+                    Intent intent = new Intent(PaginaUsuario.this, PaginaUsuario.class);
+                    startActivity(intent);
+                    return true;
+                }
+                return false;
+            }
+        });
+
     }
 }
+
+

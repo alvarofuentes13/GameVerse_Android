@@ -38,7 +38,7 @@
                 android:id="@+id/gameTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="The Witcher"
+                android:text="Titulo"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -47,7 +47,7 @@
                 android:id="@+id/gameYear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2015"
+                android:text="Año"
                 android:textColor="#AAAAAA"
                 android:textSize="14sp" />
         </LinearLayout>

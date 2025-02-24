@@ -62,11 +62,11 @@ public class PaginaPrincipal extends AppCompatActivity {
                     startActivity(intent);
                     return true;
                 } else if (itemId == R.id.nav_search) {
-                    Toast.makeText(PaginaPrincipal.this, "Buscar seleccionado", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(PaginaPrincipal.this, BuscarJuegosActivity.class);
+                    startActivity(intent);
                     return true;
                 } else if (itemId == R.id.nav_profile) {
                     Intent intent = new Intent(PaginaPrincipal.this, PaginaUsuario.class);
-                    //finish();
                     startActivity(intent);
                     return true;
                 }
@@ -92,7 +92,6 @@ public class PaginaPrincipal extends AppCompatActivity {
 
     public void goToUserPage(View view) {
         Intent intent = new Intent(this, PaginaUsuario.class);
-        //finish();
         startActivity(intent);
     }
 }
